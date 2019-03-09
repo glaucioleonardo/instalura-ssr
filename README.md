@@ -1,4 +1,4 @@
-# instalura-ssr [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+﻿# instalura-ssr [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > 
 
 ## Installation
@@ -14,6 +14,18 @@ var instaluraSsr = require('instalura-ssr');
 
 instaluraSsr('Rainbow');
 ```
+
+## Running as development (Windows: local modules)
+```
+../node_modules/.bin/gulp dev
+```
+
+## Server Api
+In case the local api won't load the images, please, use this host: 
+```
+https://cdc-react.herokuapp.com
+```
+
 ## License
 
 Apache-2.0 © []()
