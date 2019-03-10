@@ -1,0 +1,50 @@
+/*Header **************************************************************************************************************/
+.header-content {
+    @extend %header-footer-container;
+
+    input {
+        height: 1em;
+        width: 12em;
+        @extend %font-family-regular;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px){
+    .header-content {
+      font-size: 5vw;
+
+        input {
+            height: 5vw;
+        }
+    }
+}
+
+@media screen and (min-device-width: 425px) and (max-device-width: 768px){
+    .header-content {
+        input {
+            width: 38vw;
+            max-width: 15em;
+            max-height: 2em;
+        }
+    }
+}
+
+@media screen and (min-device-width: 768px) {
+    .header-content {
+        font-size: 2vw;
+
+        input {
+            // max-height: 1em;
+            height: 2vw;
+            width: 15em;
+
+            &::after {
+                width: 3em;
+                height: 3em;
+
+                background: red;
+            }
+        }
+    }
+}
+/**********************************************************************************************************************/

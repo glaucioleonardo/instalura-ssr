@@ -1,0 +1,41 @@
+%title {
+    font-size: 1em;
+    @extend %font-family-title;
+}
+
+@mixin paragraph($primaryColor: true) {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    @extend %font-family-regular;
+    
+    @if($primaryColor) {
+        color: $primary-color;
+    } @else {
+        color: $secondary-color;
+    }
+} 
+
+$transparent-image: "data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+
+%header-footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.2em;
+    background: $header-background;
+    align-items: center;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 2em;
+            width: 2em;
+            padding: 0 0.5em 0 0;
+        }
+
+        h1 {
+            @extend %title;
+        }
+    }
+}

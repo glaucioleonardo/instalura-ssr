@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Sobre a Instalura</title>
+    <link rel="shortcut icon" href="imagens/logo-instalura.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="estilos/styles.css">
+</head>
+<body>
+    <section class="header-container">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="imagens/logo-instalura.svg" alt="Instalura Logo">
+                <h1>Instalura</h1>
+            </div>
+            <input type="text" placeholder="Pesquisar">
+        </div>
+    </section>
+    <section class="content-container">
+        <div class="about-instalura-container">
+            <div class="about-instalura-content-container">
+                <div class="about-instalura-content">
+                    <h2>Sobre o Instalura</h2>
+                    <p>
+                        O instalura foi criado por uma equipe competente utilizando o que há de mais moderno 
+                        em tecnologia, mas sempre primando pela experiência do usuário.
+                    </p>
+                    <input type="button" value="Saiba mais" onclick="main.showAlert(event)">
+                </div>
+            </div>
+        </div>
+        <div class="our-team-container">
+            <div class="our-team-content-container">
+                <div class="our-team-content">
+                    <h2>Nossa equipe</h2>
+                    <img class="team-image" alt="Nossa equipe">
+                    <p>
+                        O instalura foi criado por uma equipe competente utilizando o que há de mais moderno 
+                        em tecnologia, mas sempre primando pela experiência do usuário.
+                    </p>
+                    <p>
+                        Venha conhecer nossa equipe. Quem sabe até trabalhar conosco!
+                    </p>
+                    <div class="know-team">
+                        <img src="imagens/group.svg" alt="Ícone grupo">
+                        <a href="#" onclick="main.showAlert(event)">Conheça nossa equipe</a>
+                    </div>
+                    <div class="work-with-us">
+                        <img src="imagens/usb.svg" alt="Ícone trabalhe com a gente">
+                        <a href="#" onclick="main.showAlert(event)">Trabalhe com a gente</a>
+                    </div>
+                </div>
+                <div class="news-container">
+                    <div class="news-content">
+                        <img src="imagens/festival.jpeg" alt="Foto festival">
+                        <h2>Instalura Festival</h2>
+                        <p>Venha curtir nosso festival com as melhores bandas da cidade</p>
+                    </div>
+                    <div class="news-content">
+                        <img src="imagens/camera.jpeg" alt="Foto registro fotográfico de eventos">
+                        <h2>Instalura Festival</h2>
+                        <p>Tenha suas fotografias em nossa revista</p>
+                    </div>
+                    <div class="news-content">
+                        <img src="imagens/livros.jpeg" alt="Foto biblioteca">
+                        <h2>Instalura mag</h2>
+                        <p>Biblioteca para construção de componentes reutilizáveis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-container">
+        <div class="footer-content">
+            <div class="logo-container">
+                <img src="imagens/logo-instalura.svg" alt="Logo Instalura">
+                <h1>Instalura</h1>
+            </div>
+            <div class="social-network-container">
+                <a href="https://www.facebook.com/AluraCursosOnline/" target="_blank"><img src="imagens/facebook.png" alt="Instalura Facebook"></a>
+                <a href="https://twitter.com/aluraonline" target="_blank"><img src="imagens/twitter.png" alt="Instalura Twitter"></a>
+                <a href="https://plus.google.com/+Alura" target="_blank"><img src="imagens/googleplus.png" alt="Instalura Google+"></a>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/main.js"></script>
+    <script>
+        var main = new Main(this);
+    </script>
+</body>
+</html>

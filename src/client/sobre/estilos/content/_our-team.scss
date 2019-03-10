@@ -1,0 +1,153 @@
+/*Content: Our team ***************************************************************************************************/
+.our-team-container {
+    display: flex;
+    flex-direction: column;
+    background-color: $content-background;
+
+    .our-team-content-container {
+        padding: 0.5em 0.5em;
+        // width: 100%;
+
+        .our-team-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1.5em 0.8em 0.5em 0.8em;
+
+            h2 {
+                @extend %title;
+                margin: 0 0 1em 0;
+            }
+
+            img.team-image {
+                content: url($transparent-image);
+                background: url('../imagens/requite.jpeg') no-repeat;
+                background-size: 380%;
+                background-position-x: -24.3em;
+                background-position-y: -17.6em;
+                height: 2.5em;
+                width: 100%;
+                margin: 0 0 0.5em 0;
+            }
+
+            p {
+                @include paragraph(false);
+                margin: 0 0 1em 0;
+                width: 100%;
+            }
+
+            .know-team, .work-with-us {
+                @extend %font-family-regular;
+                margin: 0 0 0.5em 0;
+                display: flex;
+                width: 100%;
+                justify-content: initial;
+
+                img {
+                    height: 1em;
+                    width: 1em;
+                    margin: 0 0.5em 0 0;
+                }
+
+                &:not(hover) {
+                    transform: scale(1);
+                    transform-origin: 0;
+                    transition: transform 0.2s ease-in;
+                }
+
+                &:hover{
+                    transform: scale(1.1);
+                    transform-origin: -5%;
+                    transition: transform 0.2s ease-in;
+                }
+            }
+        }
+
+        .news-container {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            flex-direction: column;
+
+            .news-content {
+                flex-shrink: 1;
+                margin: 0 0 1em 0;
+                padding: 2em 1em;
+                border: $secondary-color solid 0.05em;
+                
+                &:not(hover) {
+                    border: $secondary-color solid 0.05em;
+                    transition: border 0.2s ease-in;
+                }
+
+                &:hover {
+                    border: $primary-color solid 0.05em;
+                    transition: border 0.2s ease-in;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                h2 {
+                    text-align: center;
+                    margin: 1em 0;
+                    @extend %title;
+                }
+
+                p {
+                    @include paragraph(false);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px){
+    .our-team-container {
+      font-size: 5vw;
+    }
+}
+
+@media screen and (min-device-width: 768px){
+    .our-team-container {
+      font-size: 2vw;
+
+        .our-team-content-container {
+            .our-team-content {
+                position: relative;
+                margin: 1.5em 0.5em 0.5em 2em;
+                padding-left: 40vw;
+
+                img.team-image {
+                    position: absolute;
+                    left: 0;
+                    align-self: flex-start;
+                    background-position-x: unset;
+                    background-position-y: unset;
+                    background-size: 100%;
+                    height: 21.5vw;
+                    width: 38vw;
+                }
+            }
+
+            .news-container {
+                flex-direction: unset;
+                margin: 0;
+                
+                .news-content {
+                    margin: 0;
+
+                    img {
+                        height: 7.5em;
+                    }
+
+                    &:nth-child(2) {
+                        margin: 0 0.5em 0 0.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+/**********************************************************************************************************************/
