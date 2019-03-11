@@ -1,0 +1,104 @@
+// @import '../sobre/estilos/reset';
+@import '../sobre/estilos/variables';
+
+:global {
+    .main-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        max-width: 22em;
+        position : absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: $primary-color;
+        padding: 1em;
+        margin: 0 auto;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+
+        .title-container {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 2em;
+                width: 2em;
+                margin: 0 0.5em 0 0;
+            }
+
+            h1 {
+                @extend %font-family-title;
+            }
+        }
+
+        .error-message{
+            width: 100%;
+            color: rgb(233, 75, 75);
+            text-align: center;
+            font-size: 0.8em;
+            margin: 0 0 0.2em 0;
+            display: inline-block;
+        }
+
+        form {
+            @extend %font-family-regular;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            label {
+                font-size: 0.8em;
+            }
+
+            input {
+                border-radius: 20em;
+                border: 0.1em solid #dbdbdb;
+                margin: 0.3em 0 0.5em 0;
+                font-size: 0.8em;
+                padding: 0.5em 1em;
+            }
+
+            .submit-container {
+                display: flex;
+                justify-content: center;
+
+                input {
+                    flex-grow: 1;
+                    padding: 1em 0;
+                    
+                    border: none;
+                    color: $primary-color;
+                    margin-top: 2em;
+
+                    &:not(hover) {
+                        background: #3897f0;
+                        transition: all 0.2s ease-in;
+                    }
+
+                    &:hover {
+                        background: #257cce;
+                        transition: all 0.2s ease-in;
+                    }
+                }
+            }
+        }
+
+        
+        // .submit-container {
+
+
+        //     input {
+        //         box-shadow: none;
+        //         
+        //         
+        //         
+        //         
+        //         
+        //         font-size: 0.8em;
+        //     }
+        // }
+    }
+}

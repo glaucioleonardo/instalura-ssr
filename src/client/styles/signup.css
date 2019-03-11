@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+:global .main-container form {
+  font-family: 'Open Sans', sans-serif;
+}
+
+:global .main-container .title-container h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+:global .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  max-width: 22em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 1em;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+
+:global .main-container .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+:global .main-container .title-container img {
+  height: 2em;
+  width: 2em;
+  margin: 0 0.5em 0 0;
+}
+
+:global .main-container .error-message {
+  width: 100%;
+  color: #e94b4b;
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0 0 0.2em 0;
+  display: inline-block;
+}
+
+:global .main-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+:global .main-container form label {
+  font-size: 0.8em;
+}
+
+:global .main-container form input {
+  border-radius: 20em;
+  border: 0.1em solid #dbdbdb;
+  margin: 0.3em 0 0.5em 0;
+  font-size: 0.8em;
+  padding: 0.5em 1em;
+}
+
+:global .main-container form .submit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+:global .main-container form .submit-container input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1em 0;
+  border: none;
+  color: #ffffff;
+  margin-top: 2em;
+}
+
+:global .main-container form .submit-container input:not(hover) {
+  background: #3897f0;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+:global .main-container form .submit-container input:hover {
+  background: #257cce;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/*# sourceMappingURL=signup.css.map */

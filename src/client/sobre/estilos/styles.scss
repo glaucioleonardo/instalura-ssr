@@ -1,6 +1,9 @@
-@import 'variables';
-@import 'reset';
+:global {
+    @import 'variables';
+    @import 'reset';
+    
+    @import 'header';
+    @import 'content';
+    @import 'footer';
+}
 
-@import 'header';
-@import 'content';
-@import 'footer';

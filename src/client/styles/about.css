@@ -38,7 +38,6 @@
 
 :global .header-content .logo-container h1, :global .footer-container .footer-content .logo-container h1, :global .about-instalura-content-container .about-instalura-content h2, :global .our-team-container .our-team-content-container .our-team-content h2, :global .our-team-container .our-team-content-container .news-container .news-content h2 {
   font-size: 1em;
-  color: #ffffff;
 }
 
 :global .header-content, :global .footer-container .footer-content {
@@ -88,6 +87,7 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  color: #ffffff;
 }
 
 :global article, :global aside, :global details, :global figcaption, :global figure,
@@ -167,7 +167,6 @@
   :global .header-content input {
     height: 2vw;
     width: 15em;
-    font-size: 0.5em;
   }
   :global .header-content input::after {
     width: 3em;
@@ -177,7 +176,7 @@
 }
 
 :global .about-instalura-content-container {
-  background-image: url("../imagens/banner.jpeg");
+  background-image: url("../sobre/imagens/banner.jpeg");
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position-y: -5em;
@@ -291,7 +290,7 @@
 
 :global .our-team-container .our-team-content-container .our-team-content img.team-image {
   content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
-  background: url("../imagens/requite.jpeg") no-repeat;
+  background: url("../sobre/imagens/requite.jpeg") no-repeat;
   background-size: 380%;
   background-position-x: -24.3em;
   background-position-y: -17.6em;
@@ -323,10 +322,6 @@
   height: 1em;
   width: 1em;
   margin: 0 0.5em 0 0;
-}
-
-:global .our-team-container .our-team-content-container .our-team-content .know-team a, :global .our-team-container .our-team-content-container .our-team-content .work-with-us a {
-  color: #ffffff;
 }
 
 :global .our-team-container .our-team-content-container .our-team-content .know-team:not(hover), :global .our-team-container .our-team-content-container .our-team-content .work-with-us:not(hover) {

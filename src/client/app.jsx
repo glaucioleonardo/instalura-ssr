@@ -24,7 +24,7 @@ window.webappStart = () => {
   const store = createStore(rootReducer, initialState,applyMiddleware(thunkMiddleware));
   render(
     <Provider store={store}>
-      <Router history={browserHistory}>{routes}</Router>
+    <Router history={browserHistory}>{routes}</Router>
     </Provider>,
     document.querySelector(".js-content")
   );

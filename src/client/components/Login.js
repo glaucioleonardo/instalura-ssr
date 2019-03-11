@@ -37,6 +37,10 @@ export default class Login extends Component {
             });
     }
 
+    signup() {
+        browserHistory.push('/signup');
+    }
+
     render(){
         return (
             <div className="login-box">
@@ -45,7 +49,10 @@ export default class Login extends Component {
                 <form onSubmit={this.envia.bind(this)}>
                     <input type="text" ref={(input) => this.login = input}/>
                     <input type="password" ref={(input) => this.senha = input}/>
-                    <input type="submit" value="login"/>
+                    <div className="submit-container">
+                        <input type="submit" value="Login"/>
+                        <input type="button" value="Signup" onClick={this.signup}/>
+                    </div>
                 </form>
             </div>
         );

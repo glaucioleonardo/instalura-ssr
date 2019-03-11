@@ -9,7 +9,7 @@ import rootReducer from "../../client/reducers";
 import thunkMiddleware from 'redux-thunk';
 import TimelineApi from '../../client/logicas/TimelineApi';
 
-// const Promise = require("bluebird");
+const Promise = require("bluebird");
 
 function createReduxStore(req, match) { // eslint-disable-line
   const estadoInicial = {

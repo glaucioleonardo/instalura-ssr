@@ -49,6 +49,10 @@
                     margin: 0 0.5em 0 0;
                 }
 
+                a {
+                    color: $primary-color;
+                }
+
                 &:not(hover) {
                     transform: scale(1);
                     transform-origin: 0;
