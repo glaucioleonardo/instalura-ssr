@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router';
 
+
 class FotoAtualizacoes extends Component {
 
     like(event){
       event.preventDefault();      
       this.props.like(this.props.foto.id);
+    }
+
+    apaga(event){
+      event.preventDefault();      
+      this.props.apaga(this.props.foto.id);
     }
 
     comenta(event){
@@ -19,7 +25,10 @@ class FotoAtualizacoes extends Component {
               <a onClick={this.like.bind(this)} className={this.props.foto.likeada ? 'fotoAtualizacoes-like-ativo' : 'fotoAtualizacoes-like'}>Likar</a>
               <form className="fotoAtualizacoes-form" onSubmit={this.comenta.bind(this)}>
                 <input type="text" placeholder="Adicione um comentário..." className="fotoAtualizacoes-form-campo" ref={input => this.comentario = input}/>
-                <input type="submit" value="Comentar!" className="fotoAtualizacoes-form-submit"/>
+                <div className="comment-sent-delete-container">
+                  <input value="" type="submit" className="fotoAtualizacoes-form-submit" alt="Comentar post"/>
+                  <input type="button" onClick={this.apaga.bind(this)} className="delete-icon" value=""/>
+                </div>
               </form>
 
             </section>            

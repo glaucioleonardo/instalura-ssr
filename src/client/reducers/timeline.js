@@ -16,6 +16,10 @@ export function timeline(state=new List(),action){
     return new List(action.fotos);
   }
 
+  if(action.type === 'APAGA'){  
+      alert(action.msg);
+  }
+
   if(action.type === 'COMENTARIO'){            
       return trocaFoto(state,action.fotoId,fotoEstadoAntigo => {
         const novosComentarios = fotoEstadoAntigo.comentarios.concat(action.novoComentario); 

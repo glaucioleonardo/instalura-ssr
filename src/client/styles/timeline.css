@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+:global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .fotoAtualizacoes-form-submit, :global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .delete-icon {
+  font-family: 'Open Sans', sans-serif;
+}
+
+:global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .fotoAtualizacoes-form-submit, :global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .delete-icon {
+  border: none;
+  border-radius: 20em;
+  margin-right: 0.3em;
+  padding: 0.5em;
+  height: 2em;
+  width: 2em;
+  background-color: #2B4B6F;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  cursor: pointer;
+}
+
+:global {
+  /****/
+  /*******/
+  /*****/
+  /*****/
+}
+
 :global html {
   height: 100%;
 }
@@ -9,25 +36,30 @@
   height: 100%;
 }
 
-
 :global .container {
   padding: 0 10%;
 }
 
-/****/
-
 :global .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 7vh;
   border-bottom: 2px solid #aaa;
   position: fixed;
   top: 0;
   width: 80%;
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   background: #fff;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 :global .header-logo {
@@ -35,12 +67,15 @@
   height: 1em;
   padding-left: 1.5em;
   padding-bottom: .2em;
-  filter: hue-rotate(80deg);
+  -webkit-filter: hue-rotate(80deg);
+          filter: hue-rotate(80deg);
+  -webkit-transition: .4s;
   transition: .4s;
 }
 
-:global .header-logo:hover{
-  filter: hue-rotate(0);
+:global .header-logo:hover {
+  -webkit-filter: hue-rotate(0);
+          filter: hue-rotate(0);
 }
 
 :global .header-busca-campo {
@@ -66,6 +101,7 @@
   color: #fff;
   min-width: 32px;
   height: 2.4em;
+  -webkit-transition: .4s;
   transition: .4s;
 }
 
@@ -74,21 +110,18 @@
 }
 
 :global .header-nav {
-  list-style: none
+  list-style: none;
 }
 
 :global .header-nav-item a {
   text-decoration: none;
   color: #069;
   font-size: 3em;
-}    
-
-:global .header-nav-item a:hover{
-  color: #5ad4c9;
 }
 
-/*******/
-
+:global .header-nav-item a:hover {
+  color: #5ad4c9;
+}
 
 :global .foto {
   background-color: #fff;
@@ -96,20 +129,28 @@
   border-radius: 3px;
   max-width: 550px;
   margin: 2em auto;
-  
 }
 
 :global .foto-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 2%;
 }
 
-
 :global .foto-usuario {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 10%;
   margin-left: 0;
   font-weight: bold;
@@ -120,7 +161,7 @@
   color: #069;
 }
 
-:global .foto-usuario img{
+:global .foto-usuario img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -133,10 +174,8 @@
 
 :global .foto-src {
   max-width: 100%;
+  min-width: 100%;
 }
-
-/*****/
-
 
 :global .foto-info {
   padding: 1em;
@@ -160,7 +199,6 @@
   font-weight: bold;
 }
 
-
 :global .foto-info-comentarios {
   list-style: none;
   padding: 0;
@@ -173,53 +211,76 @@
   margin-bottom: .6em;
 }
 
-
-/*****/
-
 :global .fotoAtualizacoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  padding: 0 1em 1em 1em;
+  padding: 0 0.2em 0.2em 0.2em;
 }
 
-:global .fotoAtualizacoes-like {
-  background: url(../images/s2.png) no-repeat center center;
-  background-size: 32px 32px;
-  width: 44px;
-  height: 44px;
+:global .fotoAtualizacoes .fotoAtualizacoes-like {
+  background: url(../images/s2.svg) no-repeat center center;
+  background-size: 1.5em 1.5em;
+  width: 2em;
+  height: 2em;
   text-indent: -9999px;
   display: inline-block;
+  -webkit-transition: .4s;
   transition: .4s;
   margin-right: 1em;
 }
 
-:global .fotoAtualizacoes-like-ativo {
-  background: url(../images/s2-check.png) no-repeat center center;
-  background-size: 32px 32px;
-  width: 44px;
-  height: 44px;
+:global .fotoAtualizacoes .fotoAtualizacoes-like-ativo {
+  background: url(../images/s2-check.svg) no-repeat center center;
+  background-size: 1.5em 1.5em;
+  width: 2em;
+  height: 2em;
   text-indent: -9999px;
   display: inline-block;
+  -webkit-transition: .4s;
   transition: .4s;
   margin-right: 1em;
 }
 
-:global .fotoAtualizacoes-form {
+:global .fotoAtualizacoes .fotoAtualizacoes-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-:global .fotoAtualizacoes-form-campo {
+:global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  padding: 0.3em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+:global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .fotoAtualizacoes-form-submit {
+  background-image: url(../images/sent-icon.svg);
+}
+
+:global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .delete-icon {
+  background-image: url(../images/delete-icon.svg);
+  background-color: #AA3939;
+}
+
+:global .fotoAtualizacoes .fotoAtualizacoes-form .fotoAtualizacoes-form-campo {
   border: 0;
   outline: 0;
   width: 60%;
-}
-
-:global .fotoAtualizacoes-form-submit {
-  border: 0;
-  background-color: #069;
-  color: #fff;
-  height: 2.4em;
 }
 
 :global .timeline-enter {
@@ -228,6 +289,7 @@
 
 :global .timeline-enter.timeline-enter-active {
   opacity: 1;
+  -webkit-transition: opacity 500ms ease-in;
   transition: opacity 500ms ease-in;
 }
 
@@ -237,5 +299,7 @@
 
 :global .timeline-leave.timeline-leave-active {
   opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
   transition: opacity 300ms ease-in;
-}      
+}
+/*# sourceMappingURL=timeline.css.map */

@@ -1,4 +1,4 @@
-import {listagem,comentario,like,notifica} from '../actions/actionCreator';
+import {listagem,comentario,like,notifica, apaga} from '../actions/actionCreator';
 
 export default class TimelineApi {
     static lista(urlPerfil){
@@ -52,6 +52,23 @@ export default class TimelineApi {
             return liker;         
           });             
       } 
+    }
+
+    static apaga(fotoId) {
+      return dispatch => {
+        fetch(`http://localhost:8080/api/fotos/${fotoId}?X-AUTH-TOKEN=${localStorage.getItem('auth-token')}`,{method:'DELETE'})
+        .then(response => {
+          if(response.ok) return response;
+          else throw new Error("Não foi possível realizar a exclusão do post!");
+        })
+        .then(fotos => { 
+          dispatch(apaga('Post apagado com sucesso!'));
+          return fotos;
+        })
+        .catch(error => {
+          dispatch(apaga(error));
+        });
+      }
     }
 
     static pesquisa(login){

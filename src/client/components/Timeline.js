@@ -5,7 +5,6 @@ import TimelineApi from '../logicas/TimelineApi';
 import {connect} from 'react-redux';
 
 class Timeline extends Component {
-
     constructor(props){
       super(props);      
       this.login = this.props.login;      
@@ -32,6 +31,11 @@ class Timeline extends Component {
         this.login = nextProps.login;
         this.carregaFotos();
       }
+
+      if(nextProps.fotos !== this.fotos) {
+        this.fotos = nextProps.fotos;
+        this.carregaFotos();
+      }
     }
 
     render(){
@@ -42,7 +46,7 @@ class Timeline extends Component {
           transitionEnterTimeout={500}
           transitionLeaveTimeout={300}>
             {
-              this.props.fotos.map(foto => <FotoItem key={foto.id} foto={foto} like={this.props.like} comenta={this.props.comenta}/>)
+              this.props.fotos.map(foto => <FotoItem key={foto.id} apaga={this.props.apaga} foto={foto} like={this.props.like} comenta={this.props.comenta}/>)
             }               
         </ReactCSSTransitionGroup>        
  
@@ -63,10 +67,12 @@ const mapDispatchToProps = dispatch => {
     comenta : (fotoId,textoComentario) => {
       dispatch(TimelineApi.comenta(fotoId,textoComentario))
     },
+    apaga : (fotoId) => {
+      dispatch(TimelineApi.apaga(fotoId));
+    },
     lista : (urlPerfil) => {
       dispatch(TimelineApi.lista(urlPerfil));      
     }
-
   }
 }
 

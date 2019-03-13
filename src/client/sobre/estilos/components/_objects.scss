@@ -16,6 +16,22 @@
     }
 } 
 
+%rounded-button {
+    border: none;
+    border-radius: 20em;
+    margin-right: 0.3em;
+    padding: 0.5em;
+    height: 2em;
+    width: 2em;
+    background-color: $sent-button;
+    @extend %font-family-regular;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
 $transparent-image: "data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
 
 %header-footer-container {
