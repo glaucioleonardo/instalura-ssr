@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-:global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .fotoAtualizacoes-form-submit, :global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .delete-icon {
+:global .header-nav .header-nav-item .about-icon, :global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .fotoAtualizacoes-form-submit, :global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .delete-icon {
   font-family: 'Open Sans', sans-serif;
 }
 
-:global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .fotoAtualizacoes-form-submit, :global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .delete-icon {
+:global .header-logo {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+:global .header-nav .header-nav-item .about-icon, :global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .fotoAtualizacoes-form-submit, :global .fotoAtualizacoes .fotoAtualizacoes-form .comment-sent-delete-container .delete-icon {
   border: none;
   border-radius: 20em;
   margin-right: 0.3em;
@@ -113,6 +118,26 @@
   list-style: none;
 }
 
+:global .header-nav .header-nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+:global .header-nav .header-nav-item .about-icon {
+  background-image: url(../images/info.svg);
+  height: 0.7em;
+  width: 0.7em;
+  display: block;
+  padding: 0;
+  margin-left: 0.3em;
+  background-size: 0.5em 0.5em;
+  background-color: transparent;
+}
+
 :global .header-nav-item a {
   text-decoration: none;
   color: #069;
@@ -159,6 +184,7 @@
 :global .foto-usuario a {
   text-decoration: none;
   color: #069;
+  text-transform: capitalize;
 }
 
 :global .foto-usuario img {
@@ -170,6 +196,7 @@
 
 :global .foto-data {
   color: #999;
+  font-size: 0.8em;
 }
 
 :global .foto-src {

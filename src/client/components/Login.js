@@ -57,8 +57,8 @@ export default class Login extends Component {
 
                 <span className="error-message">{this.state.msg}</span>
                 <form onSubmit={this.envia.bind(this)}>
-                    <input placeholder="Login" type="text" ref={(input) => this.login = input}/>
-                    <input placeholder="Senha" type="password" ref={(input) => this.senha = input}/>
+                    <input autoComplete placeholder="Login" type="text" ref={(input) => this.login = input}/>
+                    <input autoComplete placeholder="Senha" type="password" ref={(input) => this.senha = input}/>
                     <div className="submit-container">
                         <input type="submit" value="Login"/>
                         <input type="button" value="Signup" onClick={this.signup}/>

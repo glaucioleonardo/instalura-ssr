@@ -38,16 +38,22 @@ class FotoAtualizacoes extends Component {
 
 class FotoInfo extends Component {
     render(){
+      let numberLikes = this.props.foto.likers.length;
+      let liked = numberLikes === 0 ? '' : numberLikes === 1 ? 'curtiu' : 'curtiram';
+
         return (
             <div className="foto-in fo">
               <div className="foto-info-likes">
                 {
+                   
                   this.props.foto.likers.map(liker => {
+                   
+
                     return (<Link key={liker.login} href={`/timeline/${liker.login}`}>{liker.login},</Link>)
                   })
                 }
                  
-                 curtiram
+                 {` ${liked}`}
              
               </div>
 

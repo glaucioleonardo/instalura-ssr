@@ -43,6 +43,7 @@
     padding-bottom: .2em;
     filter: hue-rotate(80deg);
     transition: .4s;
+    @extend %font-family-title;
   }
   
   .header-logo:hover{
@@ -80,7 +81,24 @@
   }
   
   .header-nav {
-    list-style: none
+    list-style: none;
+
+    .header-nav-item {
+      display: flex;
+      align-items: center;
+
+      .about-icon {
+        @extend %rounded-button;
+        background-image: url(../images/info.svg);
+        height: 0.7em;
+        width: 0.7em;
+        display: block;
+        padding: 0;
+        margin-left: 0.3em;
+        background-size: 0.5em 0.5em;
+        background-color: transparent;
+      }
+    }
   }
   
   .header-nav-item a {
@@ -124,6 +142,7 @@
   .foto-usuario a {
     text-decoration: none;
     color: #069;
+    text-transform: capitalize;
   }
   
   .foto-usuario img{
@@ -135,6 +154,7 @@
   
   .foto-data {
     color: #999;
+    font-size: 0.8em;
   }
   
   .foto-src {

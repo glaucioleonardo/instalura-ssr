@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TimelineApi from '../logicas/TimelineApi';
+import {browserHistory} from  'react-router';
 
 export default class Header extends Component {
 
@@ -12,6 +13,10 @@ export default class Header extends Component {
       this.props.store.subscribe(() => {
         this.setState({msg:this.props.store.getState().notificacao});
       });
+    }
+
+    about() {
+      browserHistory.push('/about');
     }
 
     pesquisa(event){
@@ -41,6 +46,7 @@ export default class Header extends Component {
                   {/*                 ♥ */}
                   {/* Quem deu like nas minhas fotos */}
                 </a>
+              <a className="about-icon" onClick={this.about.bind(this)} href="#"></a>
               </li>
             </ul>
           </nav>
