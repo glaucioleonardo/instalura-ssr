@@ -35,7 +35,6 @@ class Timeline extends Component {
     }
 
     render(){
-        console.log("render");
         return (
         <div className="fotos container">
         <ReactCSSTransitionGroup

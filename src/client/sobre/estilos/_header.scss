@@ -1,7 +1,7 @@
 /*Header **************************************************************************************************************/
 .header-content {
     @extend %header-footer-container;
-
+    cursor: pointer;
     input {
         height: 1em;
         width: 12em;

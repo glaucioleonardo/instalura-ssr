@@ -46,8 +46,10 @@
     "jquery": "^3.3.1",
     "lodash": "^4.10.1",
     "material-ui": "^0.16.7",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-select": "^2.4.1",
     "react-tap-event-plugin": "^2.0.0",
+    "redux-form": "^8.1.0",
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {

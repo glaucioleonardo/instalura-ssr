@@ -138,6 +138,10 @@
   }
 }
 
+:global .header-content {
+  cursor: pointer;
+}
+
 :global .header-content input {
   height: 1em;
   width: 12em;
@@ -443,6 +447,10 @@
   :global .our-team-container .our-team-content-container .news-container .news-content:nth-child(2) {
     margin: 0 0.5em 0 0.5em;
   }
+}
+
+:global .footer-container .footer-content {
+  cursor: pointer;
 }
 
 :global .footer-container .footer-content .social-network-container {

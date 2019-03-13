@@ -2,7 +2,7 @@
 .footer-container {
     .footer-content {
         @extend %header-footer-container;
-
+        cursor: pointer;
         .social-network-container {
             display: flex;
             justify-content: space-around;

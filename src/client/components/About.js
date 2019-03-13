@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import {browserHistory} from  'react-router';
 import '../sobre/estilos/styles.css';
-
 
 import instaluraLogo from '../sobre/imagens/logo-instalura.svg';
 
@@ -25,12 +25,16 @@ export default class About extends Component {
         alert(this._message);
     } 
 
+    home() {
+        browserHistory.push('/');
+    }
+
     render() {
         return(
             <div>
                 <section className="header-container">
                     <div className="header-content">
-                        <div className="logo-container">
+                        <div alt="Voltar para a home page" onClick={this.home.bind(this)} className="logo-container">
                             <img src={instaluraLogo} alt="Instalura Logo"/>
                             <h1>Instalura</h1>
                         </div>
@@ -93,7 +97,7 @@ export default class About extends Component {
                 </section>
                 <section className="footer-container">
                     <div className="footer-content">
-                        <div className="logo-container">
+                        <div onClick={this.home.bind(this)} alt="Voltar para a home page" className="logo-container">
                             <img src={instaluraLogo} alt="Logo Instalura"/>
                             <h1>Instalura</h1>
                         </div>

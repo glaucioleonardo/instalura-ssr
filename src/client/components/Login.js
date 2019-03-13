@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {browserHistory} from  'react-router';
+import instaluraLogo from '../sobre/imagens/logo-instalura.svg';
+
 
 export default class Login extends Component {
 
@@ -24,7 +26,7 @@ export default class Login extends Component {
                 if(response.ok) {
                     return response.text();
                 } else {
-                    throw new Error('não foi possível fazer o login');
+                    throw new Error('Não foi possível fazer o login!');
                 }
             })
             .then(token => {
@@ -41,19 +43,28 @@ export default class Login extends Component {
         browserHistory.push('/signup');
     }
 
+    about() {
+        browserHistory.push('/about');
+    }
+
     render(){
         return (
-            <div className="login-box">
-                <h1 className="header-logo">Instalura</h1>
-                <span>{this.state.msg}</span>
+            <div className="main-container">
+                <div className="title-container">
+                    <img src={instaluraLogo}/>
+                    <h1>Instalura</h1>
+                </div>
+
+                <span className="error-message">{this.state.msg}</span>
                 <form onSubmit={this.envia.bind(this)}>
-                    <input type="text" ref={(input) => this.login = input}/>
-                    <input type="password" ref={(input) => this.senha = input}/>
+                    <input placeholder="Login" type="text" ref={(input) => this.login = input}/>
+                    <input placeholder="Senha" type="password" ref={(input) => this.senha = input}/>
                     <div className="submit-container">
                         <input type="submit" value="Login"/>
                         <input type="button" value="Signup" onClick={this.signup}/>
                     </div>
                 </form>
+                <a href="#" class="about-anchor" onClick={this.about.bind(this)}>Sobre a alura</a>
             </div>
         );
     }
