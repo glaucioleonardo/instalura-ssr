@@ -1,6 +1,9 @@
 ﻿# instalura-ssr [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > 
 
+## Instalura SSR (Without Electrode)
+This project is the same as this one "[but Without Electrode]"(https://github.com/glaucioleonardo/instalura-ssr).
+
 ##Version including Electrode
 
 ## Installation
