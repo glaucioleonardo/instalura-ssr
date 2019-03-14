@@ -2,9 +2,11 @@
 > 
 
 ## Instalura SSR (Without Electrode)
-This project is the same as this one but [Without Electrode](https://github.com/glaucioleonardo/instalura-ssr).
+If you wanna this project without Electrode [click here](https://github.com/glaucioleonardo/instalura-ssr).
 
-##Version including Electrode
+
+
+## Version including Electrode (this one)
 
 ## Installation
 
